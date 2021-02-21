@@ -1,0 +1,68 @@
+:root{
+    --default: hsl(176, 50%, 47%);
+    --inactive: hsl(0, 0%, 48%);
+}
+
+.btn{
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 35px;
+    margin: 0;
+    border-radius: 35px;
+    border: hidden;
+    font-family: Commisioner;
+    font-size: 0.75rem;
+    
+}
+ 
+
+
+/* Making design for button template */
+.btn-nav{
+    background: none;
+    border: hidden;
+    width: min-content;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-nav > p{
+    padding: 0;
+}
+
+
+.btn-option-nav{
+    border: hidden;
+    background: none;
+}
+
+.btn-default{
+    background: var(--default);
+    color: white;
+    font-size: 16px;
+}
+
+.btn-default1{
+    background: var(--default);
+    color: white;
+    font-size: 16px;
+    padding: 0;
+}
+
+.btn-default1 > p{
+    padding: 15px 35px;
+}
+
+.btn-bookmark{
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    border-radius: 30px;
+    background: none;
+}
+
+.btn-inactive{
+    background: var(--inactive);
+    font-size: 16px;
+    color: #fff;
+}

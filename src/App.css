@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700&display=swap');
+
+.App{
+    width: 100vw;
+    margin: 0;
+    font-family: 'Commisioner', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: 'Commisioner', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg{
+    /* background: url(./images/image-hero-mobile.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; */
+    width: 100vw;
+    /* height: 45vh; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg > img {
+    width: 100vw;
+    height: 55vh;
 }
 
-.App-link {
-  color: #61dafb;
+.bg > .desktop {
+    display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media all and (min-width: 600px) {
+    .bg > .mobile {
+        display: none;
+    }
+
+    .bg > .desktop {
+        display: block;
+    }
 }
+

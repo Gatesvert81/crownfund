@@ -1,0 +1,67 @@
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cash{
+    text-align: center;
+}
+
+.dashboard > .dashboard-details > .pledge-amount hr {
+    align-self: center;
+    margin-bottom: 20px;
+    /* width: 75px; */
+}
+
+.dashboard > .dashboard-details > .donors > hr {
+    align-self: center;
+    margin-bottom: 20px;
+    /* width: 75px; */
+}
+
+.cash > h3  {
+    font-size: 2.2rem;
+    font-weight: 650;
+    margin-bottom: 20px ; 
+}
+
+.cash > p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+@media all and (min-width: 600px) {
+    .dashboard > .dashboard-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .dashboard > .dashboard-details >  hr {
+        display: none;
+        align-self: center;
+        margin-bottom: 20px;
+        width: 75px;
+    }
+
+    .dashboard > .dashboard-details > .pledge-amount > hr {
+        display: none;
+    }
+
+    .dashboard > .dashboard-details > .donors > hr {
+        display: none;
+    }
+
+    .dashboard > .dashboard-details > .pledge-amount  {
+        align-self: flex-start;
+    }
+
+    .dashboard > .dashboard-details > .donors {
+        margin: 0 5vw;
+        padding: 0 2vw;
+        border-left: 1px solid rgba(71, 70, 70, 0.37);
+        border-right: 1px solid rgba(71, 70, 70, 0.37);
+    }
+}

@@ -1,0 +1,14 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 5vh 5vw;
+    background: #fff;
+    border: 1px solid rgba(99, 97, 97, 0.671);
+    border-radius: 14px;
+    text-align: center;
+}
+

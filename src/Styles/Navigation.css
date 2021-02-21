@@ -1,0 +1,108 @@
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(black, transparent);
+    position: absolute;
+    z-index: 100;
+    width: 90%;
+    height: fit-content;
+    padding: 5vh 5vw;
+}
+ 
+
+
+.hamburger > .burger{
+    margin-right: 50vw;
+}
+
+.hamburger > .burger > img {
+    width: 50px;
+    height: 30px;
+}
+
+.nav-hide{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 5vh;
+    left: 0;
+}
+
+.nav-hide > .close {
+    align-self: flex-end;
+    margin-right: 5vw;
+}
+
+.nav-hide > .close  img {
+    filter: invert(99%) sepia(10%) saturate(739%) hue-rotate(252deg) brightness(122%) contrast(100%);
+}
+
+.nav-nav {
+    margin: 3vh 5vw 0 5vw;
+    background: #ffffff;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.nav-nav > h4 {
+    margin: 5vw 5vh;
+}
+
+.nav-nav > hr {
+    opacity: 45%;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+@media all and (min-width: 600px) {
+
+    .nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav-icon{
+        margin-left: 5vw;
+    }
+
+    .hamburger , .nav-hide >.close {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        position: absolute;
+        top: 5.3vh;
+        right: 10vw;
+    }
+
+    .desktop-nav > ul{
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+    }
+
+    .desktop-nav > ul > li {
+        cursor: pointer;
+        text-decoration: none;
+        list-style: none;
+        margin-left: 3vw;
+        color: white;
+        transition: 0.5s;
+        opacity: 70%;
+    }
+
+    .desktop-nav > ul > li:hover {
+        transform: scale(1.2);
+        opacity: 100%;
+    }
+}
+
+
+
+

@@ -1,0 +1,51 @@
+
+.home-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    top: 40vh;
+}
+
+
+.home-card > .logo{
+    position: absolute;
+    left: 40vw;
+    top: -2px;
+}
+
+.home-card > .title {
+    padding: 0 6vw;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.detail{
+    margin-bottom: 5vh;
+}
+
+.detail > span {
+    font-size: 0.8rem;
+}
+
+.btn-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-section  img {
+    width: 8vh;
+    height: 100%;
+}
+
+@media all and (min-width: 600px) {
+    .home-card > .logo{
+        position: absolute;
+        left: 50vw;
+        top: -2px;
+    }
+}
